@@ -1,4 +1,4 @@
-import { formatTime } from 'cache-testing/utils/format-time';
+import { formatTime } from 'cache-testing-15-app/utils/format-time';
 
 type CacheStateWatcherProps = { time: number; isFallback?: boolean };
 

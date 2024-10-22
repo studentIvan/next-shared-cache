@@ -1,8 +1,8 @@
 import { unstable_noStore as noStore } from 'next/cache';
 import { Suspense } from 'react';
 
-import { formatTime } from 'cache-testing/utils/format-time';
-import type { TimeBackendApiResponseJson } from 'cache-testing/utils/types';
+import { formatTime } from 'cache-testing-15-app/utils/format-time';
+import type { TimeBackendApiResponseJson } from 'cache-testing-15-app/utils/types';
 
 async function ActualData(): Promise<JSX.Element> {
     noStore();

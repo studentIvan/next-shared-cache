@@ -21,7 +21,7 @@ const args = process.argv.slice(2).reduce<Record<string, string>>((acc, arg) => 
 const { hostname = 'localhost', ports = '3000' } = args;
 
 function getNameByPort(port: string): string {
-    return `@repo/cache-testing-${port}`;
+    return `@repo/cache-testing-15-app-${port}`;
 }
 
 pm2.connect(true, (connectError?: Error) => {
@@ -35,7 +35,7 @@ pm2.connect(true, (connectError?: Error) => {
 
         pm2.start(
             {
-                script: `.next/__instances/${port}/apps/cache-testing/server.js`,
+                script: `.next/__instances/${port}/apps/cache-testing-15-app/server.js`,
                 name,
                 env: {
                     ...process.env,

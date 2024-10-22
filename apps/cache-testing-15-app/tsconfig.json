@@ -2,7 +2,7 @@
     "extends": "@repo/typescript-config/nextjs.json",
     "compilerOptions": {
         "paths": {
-            "cache-testing/*": ["./src/*"]
+            "cache-testing-15-app/*": ["./src/*"]
         },
         "plugins": [
             {

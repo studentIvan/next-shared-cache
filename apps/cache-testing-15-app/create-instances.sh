@@ -2,7 +2,7 @@
 
 # Set common paths
 STANDALONE_DIR="$PWD/.next/standalone"
-APP_DIR="$STANDALONE_DIR/apps/cache-testing"
+APP_DIR="$STANDALONE_DIR/apps/cache-testing-15-app"
 PUBLIC_DIR="$PWD/public"
 STATIC_DIR="$PWD/.next/static"
 FETCH_CACHE_DIR="$PWD/.next/cache/fetch-cache"

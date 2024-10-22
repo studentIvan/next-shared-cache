@@ -2,8 +2,8 @@ import { Suspense } from 'react';
 
 import type { PageProps } from './types';
 
-import { CacheStateWatcher } from 'cache-testing/components/cache-state-watcher';
-import { PreRenderedAt } from 'cache-testing/components/pre-rendered-at';
+import { CacheStateWatcher } from 'cache-testing-15-app/components/cache-state-watcher';
+import { PreRenderedAt } from 'cache-testing-15-app/components/pre-rendered-at';
 
 export function CommonAppPage({ count, revalidateAfter, time, path }: PageProps): JSX.Element {
     return (

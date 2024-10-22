@@ -1,5 +1,5 @@
 {
-    "name": "@repo/cache-testing",
+    "name": "@repo/cache-testing-15-app",
     "version": "0.0.0",
     "private": true,
     "license": "MIT",
@@ -12,7 +12,7 @@
         "eslint:check": "next lint",
         "eslint:fix": "next lint --fix",
         "playwright:install": "playwright install chromium",
-        "start": "dotenv -e .env.local -v SERVER_STARTED=1 node .next/standalone/apps/cache-testing/server.js"
+        "start": "dotenv -e .env.local -v SERVER_STARTED=1 node .next/standalone/apps/cache-testing-15-app/server.js"
     },
     "dependencies": {
         "@neshca/cache-handler": "*",

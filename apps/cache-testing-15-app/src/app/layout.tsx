@@ -1,9 +1,9 @@
 import type { PropsWithChildren } from 'react';
 import { Suspense } from 'react';
 
-import { RestartButton } from 'cache-testing/components/restart-button';
-import { RevalidateButton } from 'cache-testing/components/revalidate-button';
-import 'cache-testing/globals.css';
+import { RestartButton } from 'cache-testing-15-app/components/restart-button';
+import { RevalidateButton } from 'cache-testing-15-app/components/revalidate-button';
+import 'cache-testing-15-app/globals.css';
 
 export const metadata = {
     title: 'Cache testing app',

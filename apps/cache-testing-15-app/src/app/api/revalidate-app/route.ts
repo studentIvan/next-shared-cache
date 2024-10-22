@@ -2,7 +2,7 @@ import { revalidatePath, revalidateTag } from 'next/cache';
 import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 
-import { formatTime } from 'cache-testing/utils/format-time';
+import { formatTime } from 'cache-testing-15-app/utils/format-time';
 
 export function GET(request: NextRequest): Promise<NextResponse> {
     const path = request.nextUrl.searchParams.get('path');

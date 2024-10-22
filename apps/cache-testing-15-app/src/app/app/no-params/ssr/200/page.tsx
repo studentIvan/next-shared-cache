@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 
-import { CommonAppPage } from 'cache-testing/utils/common-app-page';
-import { createGetData } from 'cache-testing/utils/create-get-data';
+import { CommonAppPage } from 'cache-testing-15-app/utils/common-app-page';
+import { createGetData } from 'cache-testing-15-app/utils/create-get-data';
 
 const getData = createGetData('app/no-params/ssr', undefined, 'no-store');
 
