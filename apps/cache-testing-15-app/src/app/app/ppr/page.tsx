@@ -1,5 +1,5 @@
 import { unstable_noStore as noStore } from 'next/cache';
-import { Suspense } from 'react';
+import { type JSX, Suspense } from 'react';
 
 import { formatTime } from 'cache-testing-15-app/utils/format-time';
 import type { TimeBackendApiResponseJson } from 'cache-testing-15-app/utils/types';

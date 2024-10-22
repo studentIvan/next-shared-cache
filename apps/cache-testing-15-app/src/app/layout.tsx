@@ -1,4 +1,4 @@
-import type { PropsWithChildren } from 'react';
+import type { JSX, PropsWithChildren } from 'react';
 import { Suspense } from 'react';
 
 import { RestartButton } from 'cache-testing-15-app/components/restart-button';

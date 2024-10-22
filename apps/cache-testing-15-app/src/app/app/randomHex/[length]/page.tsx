@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { Suspense } from 'react';
+import { type JSX, Suspense } from 'react';
 
 import { CacheStateWatcher } from 'cache-testing-15-app/components/cache-state-watcher';
 import { PreRenderedAt } from 'cache-testing-15-app/components/pre-rendered-at';
@@ -7,13 +7,17 @@ import type { RandomHexPageProps } from 'cache-testing-15-app/utils/types';
 
 const lengthSteps = new Array(5).fill(0).map((_, i) => 10 ** (i + 1));
 
-type PageParams = { params: { length: string } };
+type PageParams = { params: Promise<{ length: string }> };
 
 export function generateStaticParams(): PageParams['params'][] {
-    return lengthSteps.map((length) => ({ length: `${length}` }));
+    return lengthSteps.map((length) => Promise.resolve({ length: `${length}` }));
 }
 
-export default async function Page({ params: { length } }: PageParams): Promise<JSX.Element> {
+export default async function Page(props0: PageParams): Promise<JSX.Element> {
+    const params = await props0.params;
+
+    const { length } = params;
+
     const path = `/randomHex/app/${length}`;
 
     const url = new URL(path, 'http://localhost:8081');

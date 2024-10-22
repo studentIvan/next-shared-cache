@@ -20,7 +20,11 @@ export function createGetData(
     cache?: RequestCache | 'unstable-cache' | 'nesh-cache',
 ) {
     return async function getData(slug: string): Promise<Omit<PageProps, 'revalidateAfter'> | null> {
-        const pathAndTag = `/${path}/${normalizeSlug(slug)}`;
+        const splittedPath = path.split('/');
+
+        splittedPath[0] = `next-15-${splittedPath[0]}`;
+
+        const pathAndTag = `/${splittedPath.join('/')}/${normalizeSlug(slug)}`;
 
         const url = new URL(`/count${pathAndTag}`, 'http://localhost:8081');
 

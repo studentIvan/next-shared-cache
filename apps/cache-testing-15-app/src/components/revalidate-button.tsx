@@ -1,7 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import { useState } from 'react';
+import { type JSX, useState } from 'react';
 
 type RevalidateButtonAppProps = {
     nextApi: 'app';
